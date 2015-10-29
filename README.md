@@ -1,5 +1,7 @@
 # OAuthIOTest2
 
+Article : http://blog.reactor.fr/post/2015/10/26/oauth-io-sur-une-application-apache-cordova
+Article : http://blog.reactor.fr/post/2015/10/29/connection-facebook-api-sur-apache-cordova
 
 suite de https://github.com/couscousbzh/OAuthIOTest1
 
