@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+
+    <!--
+        Personnalisez la stratégie de sécurité de contenu dans la balise méta ci-dessous selon vos besoins. Ajoutez 'unsafe-inline' à default-src pour activer JavaScript directement dans les lignes.
+        Pour obtenir des détails, consultez http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src *; connect-src *; img-src *; font-src *; frame-src *;">
+    <!--
+    http://content-security-policy.com/
+
+    none', as you might expect, matches nothing.
+    'self' matches the current origin, but not its subdomains.
+    'unsafe-inline' allows inline JavaScript and CSS
+    'unsafe-eval' allows text-to-JavaScript mechanisms like eval-->
+
+    <title>OAuthIOTest2</title>
+
+    <!-- Références OAuthIOTest1 -->
+    <link href="css/index.css" rel="stylesheet" />
+
+    <!--We only use the UI style of the Ionic framework, for nice presentation-->
+    <link href="css/ionic.min.css" rel="stylesheet" />    
+    
+    <!-- Référence Cordova ajoutée à votre application une fois générée. -->
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+
+    <script src="scripts/jquery-2.1.4.min.js"></script>    
+    
+    <!--Cordova init app-->
+    <script src="scripts/index.js"></script>
+    
+</head>
+<body>
+
+    <div class="bar bar-header bar-positive">
+        <h1 class="title">Test OAuth.io V2</h1>
+    </div>
+
+    <div class="row responsive-sm">
+
+        <br /><br />
+
+        <div class="col text-center">
+
+            <img src="images/singe.jpg" height="100" />
+            <p>Utilise une API tierce : https://oauth.io/</p>
+
+            <bouton id="buttonPostMessageOnMyWall" class="button icon-left ion-social-facebook button-full button-calm">Post message to my Wall</bouton>
+            <bouton id="buttonPostMessagePhotoLinkOnMyWall" class="button icon-left ion-social-facebook button-full button-calm">Post message + photo(link) to my Wall</bouton>
+            <bouton id="buttonPostPhotoOnMyWall" class="button icon-left ion-social-facebook button-full button-calm">Post photo to my Wall</bouton>
+
+            <!--<div class="icon ion-settings"></div>-->
+
+        </div>
+
+        <div class="col text-center">
+
+            <p>Utilise l'API officielle de Facebook. </p>
+
+            <bouton id="buttonLoginFBStandardAPI" class="button icon-left ion-social-facebook button-full button-positive">Login Facebook Standard</bouton>
+
+
+        </div>
+
+
+    </div>
+
+</body>
+</html>
